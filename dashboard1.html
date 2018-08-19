@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		
+		#menu
+		{
+			width: 60px;
+			height: 20px;
+		    margin-top: 40px;
+		    margin-left: 20px;
+		}
+		.inbox
+		{
+			color: rgba(255, 255, 255,0.8);
+			margin-top: 20px;
+			position: absolute;
+			
+		}
+		#adduser
+		{
+			margin-top: 25px;
+			width: 15px;
+			height: 15px;
+			margin-left: 180px;
+		position: absolute;
+		opacity: 0.8;
+			
+		}
+		.part1
+		{
+			color: white;
+			margin-top: 90px;
+			margin-left: 10px;
+            font-size: 14px;
+			
+		}
+		.part2
+		{
+			color: white;
+			margin-top: 20px;
+			margin-left: 10px;
+            font-size: 14px;
+			
+		}
+		#searchbar
+		{
+			width: 300px;
+			height: 30px;
+			color: white;
+			margin-top: 15px;
+			margin-left: 20px;
+			background-color:rgba(14, 15, 15,0.1); 
+
+		}
+	#chat1
+	{
+		width: 50px;
+		height: 50px;
+		margin-top: 40px;
+		margin-left: 5px;
+		border-radius: 60px 60px 60px 60px;
+		border:3px solid  green;
+		position: absolute;
+	
+	}
+	#chat2
+	{
+		width: 50px;
+		height: 50px;
+		margin-top: 28px;
+		margin-left: 5px;
+		border-radius: 60px 60px 60px 60px;
+		border:3px solid  green;
+		position: absolute;
+	
+	}
+	.chat1n
+	{
+		margin-left: 70px;
+        
+		color: white;
+		margin-top: 45px;
+	}
+	.chat1nd
+	{
+		margin-left: 70px;
+        
+		color: white;
+		margin-top: -20px;
+		font-size: 12px;
+	}
+	#buttons
+	{
+		background-color:  rgba(14, 15, 15,0.0); 
+		border:0px; width: 100%;
+		 height: 30px;
+		text-align: left;
+		margin-top: 5px;
+		margin-left: 0px;
+
+	}
+	#buttons:hover {
+    background-color:  rgba(111, 112, 114,0.5) ;
+}
+#chatdashboard:hover
+{
+	 background-color:  rgb(111, 112, 114) ;
+}
+
+#chatdashboard
+{
+	color: white; background-color: rgba(14, 15, 15,0.1); height: 70px;
+	margin-top: 2px;
+}
+#profilepic
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 60px 60px 60px 60px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#chatname
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+	#infobar
+	{
+		width: 15px;
+		height: 15px;
+	position: absolute; 
+	top: 20px;
+	left: 315px;
+
+		
+	
+		
+	}
+	.message
+	{
+		font-size: 12px;
+		margin-top: -20px;
+		margin-left: 74px;
+	}
+	.time
+	{
+		margin-left:310px;
+		margin-top: -35px;
+	
+		font-size: 12px;
+		opacity: 0.4;
+		
+	}
+	.chatcard
+	{
+		width: 100%;
+		height:520px;
+		margin-top: px;
+		background-color: rgb(215, 217, 221);
+	}
+#fav
+{
+	width: 22px;
+	height: 22px;
+	margin-left: 330px;
+	margin-top: -100px;
+	opacity: 0.5;
+}
+#phone
+{
+	width: 22px;
+	height: 22px;
+	margin-left: 370px;
+	margin-top: -150px;
+	border-radius: 3px 3px 3px 3px;
+	opacity: 0.5;
+}
+.vdborder
+{
+	width: 22px; height: 22px; border:1px solid black; margin-left: 410px; margin-top: -96px;
+	border-radius: 3px 3px 3px 3px;
+	opacity: 0.5
+}
+#videocall{
+	width: 13px;
+	height: 13px;
+	margin-top: -10px;
+	margin-left: 1.5px;
+}
+
+#leftchat{
+width: 30px;
+height: 30px; 
+margin-left: 20px;
+border-radius: 60px 60px 60px 60px;
+}
+#rightchat
+{
+	width: 30px;
+height: 30px; 
+margin-left: 420px;
+border-radius: 60px 60px 60px 60px;
+}
+.chat1
+{
+	width: 300px;
+	
+	background-color: rgba(255, 255, 255,0.9) ;
+	margin-left: 60px;
+	margin-top: -35px;
+	border-radius: 3px 3px 3px 3px ;
+}
+.chat2
+{
+	width: 300px;
+	
+	background-color: rgba(0, 137, 34,0.8) ;
+	margin-left: 110px;
+	margin-top: -35px;
+	border-radius: 3px 3px 3px 3px ;
+}
+#timeleft1
+{
+	margin-left: 360px;
+	font-size: 12px;
+	margin-top: -15px;
+}
+#timeright1
+{
+	margin-left: 77px;
+	font-size: 12px;
+	margin-top: -15px;
+}
+.chatin
+{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+#textinput
+{
+	width: 330px;
+	height: 60px;
+	margin-left: 40px;
+	border:0px;
+
+}
+#link
+{
+	width: 22px;
+	position: absolute;
+	margin-top: 26px;
+	margin-left: 10px;
+	opacity: 0.8;
+}
+#gmail1
+{
+	margin-top: -10px;
+	width: 20px;
+	margin-left: 10px;
+}
+.select
+{
+	margin-left: 100px;
+	margin-top: 25px;
+	border-radius: 3px 3px 3px 3px ;
+}
+#profileimage
+{
+	width: 150px;
+	height: 150px;
+	margin-left: 30px;
+	margin-top: 30px;
+	border-radius: 5px 5px 5px 5px;
+}
+#whatsapp
+{
+	margin-top: 10px;
+	width: 20px;
+	margin-left: 40px;
+}
+#messgesin
+{
+padding: 10px;
+}
+#whatsappdiv
+{
+	background-color: ;
+	width: 100%;
+	height: 40px;
+}
+#whatsappdiv:hover
+{
+	background-color:  rgba(255,255,255,0.1);
+}
+
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+alert("akhil");
+		}
+		function hideDiv(){
+document.getElementById('personchat1').style.display = "none";
+
+document.getElementById('personchat2').style.display = "none";
+document.getElementById('personprofile1').style.display = "none";
+document.getElementById('personchat3').style.display = "none";
+document.getElementById('personprofile3').style.display = "none";
+document.getElementById('personprofile2').style.display = "none";
+}
+function chat1()
+{
+document.getElementById('personchat2').style.display = "block";
+document.getElementById('personprofile1').style.display = "block";
+document.getElementById('personprofile3').style.display = "none";
+document.getElementById('personprofile2').style.display = "none";
+document.getElementById('personchat1').style.display = "none";
+document.getElementById('personchat3').style.display = "none";
+}
+function chat2()
+{
+document.getElementById('personchat1').style.display = "block";
+document.getElementById('personchat2').style.display = "none";
+document.getElementById('personchat3').style.display = "none";
+
+document.getElementById('personprofile3').style.display = "none";
+document.getElementById('personprofile1').style.display = "none";
+
+document.getElementById('personprofile2').style.display = "block";
+}
+function chat3()
+{
+document.getElementById('personchat1').style.display = "none";
+document.getElementById('personchat3').style.display = "block";
+document.getElementById('personchat2').style.display = "none";
+document.getElementById('personprofile1').style.display = "none";
+document.getElementById('personprofile2').style.display = "none";
+document.getElementById('personprofile3').style.display = "block";
+}
+
+	</script>
+
+
+</head>
+<body  style="width: 100%" onload="hideDiv()">
+<div >
+  <div class="row">
+    <div class="col-sm-1" style="background-color: rgba(14, 15, 15,1); padding: 0px;">
+     <img id="menu" src="menu.svg">
+     <hr style=" opacity: 0.1; background-color: white; margin-top: 20px;">
+         <div id="whatsappdiv">
+     	 <img id="whatsapp" src="whatsapp.svg">
+         </div>
+          <div id="whatsappdiv">
+     	 <img id="whatsapp" src="gmail.svg">
+         </div>
+          <div id="whatsappdiv">
+     	 <img id="whatsapp" src="skype.svg">
+         </div>
+          <div id="whatsappdiv">
+     	 <img id="whatsapp" src="add.svg">
+         </div>
+       
+       </div>
+    <div class="col-sm-2" style="background-color: rgba(14, 15, 15,0.9);">
+  <h6 class="inbox">Inbox </h6><img id="adduser"   src="add-user.svg">
+       <div class="part1">
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">All</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Messages</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Unread</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Important</button>   
+       </div>
+        <hr style="background-color: rgba(255,255,255,0.4); margin-top: 20px; margin-bottom: 20px;">
+         <div class="part2">
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Teams</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Groups</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Channels</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Location</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Media</button>
+         </div>
+         <hr style="background-color: rgba(255,255,255,0.4); margin-top: 20px; margin-bottom: 20px;">
+         <div class="part2">
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Help</button>
+            <button type="button" id="buttons" class="btn btn-secondary btn-sm" style="">Settings</button>
+        </div>
+    </div>
+    <div class="col-sm-3" style="background-color:  rgba(14, 15, 15,0.8); padding: 0px;">
+      <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+         <div class="row no-gutters" onclick="chat1()">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 40px; "> 
+              <img id="profilepic" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" style="border:3px solid green"> <span id="chatname"> Akhil Nallamothu  <img id="infobar" src="dots.svg"><p class="message">
+             Typing...<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+          <div class="row no-gutters">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; " onclick="chat2()"> 
+              <img id="profilepic" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350" style="border:3px solid green"> <span id="chatname"> James camaroon <img id="infobar" src="dots.svg"><p class="message">
+             send the customer documents..<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+          <div class="row no-gutters" onclick="chat3()">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; "> 
+              <img id="profilepic" src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2018/03/h6-1521531233.jpg"> <span id="chatname"> Frinkley sona <img id="infobar" src="dots.svg"><p class="message">
+             send the customer documents..<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+          <div class="row no-gutters">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; "> 
+              <img id="profilepic" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg"> <span id="chatname"> Brikkley lerdge  <img id="infobar" src="dots.svg"><p class="message">
+             send the customer documents..<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+          <div class="row no-gutters">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; "> 
+              <img id="profilepic" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg"> <span id="chatname"> Hendry kirch john  <img id="infobar" src="dots.svg"><p class="message">
+             ajbciasbfiya<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+          <div class="row no-gutters">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; "> 
+              <img id="profilepic" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg"> <span id="chatname"> Jarbesh josh <img id="infobar" src="dots.svg"><p class="message">
+          iabciadb<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+         
+          <div class="row no-gutters">
+            <div id="chatdashboard" class="col-1 col-sm-8 col-md-12" style="margin-top: 0px; " onclick="validate()"> 
+              <img id="profilepic" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg"> <span id="chatname"> kenly kirchan  <img id="infobar" src="dots.svg"><p class="message">
+            akjsbfjabsf<p class="time">1min</p> </p>
+                </span>
+             </div> 
+         </div>
+
+         
+       
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-4"  name="akhil" style="background-color: rgb(215, 217, 221); padding: 0px; width: 200px;" onload="hideDiv()">
+           <div id="personchat2">  
+             	      <p style="margin: 30px; font-size: 14px;"><strong> Akhil Nallamothu</strong> is typing..</p>
+    	                   <img id="fav" src="star.svg">
+    	                    <img id="phone" src="phone.svg">
+    	                    <div class="vdborder" style="">
+    		                      <img id="videocall" src="videocall.svg">
+    	                    </div><br>
+    	               <hr style="margin-top: 10px;">
+
+                        <div class="chatcard" >
+                                <img id="leftchat" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" > 
+                                    <div class="chat1" style="height: 30px; ">
+           	                  <span id="messgesin"> klsnlsdNLM</span>
+                                 </div>
+                         <p id="timeleft1">11:30</p>
+                     <img id="rightchat" src="akhil.jpg" > 
+                        <div class="chat2" style="height: 40px;">
+           	                   <span id="messgesin"> <span id="messgesin"> klsnlsdNLM</span></div>
+                         <p id="timeright1">11:30</p>
+                       <img id="leftchat" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" > 
+                          <div class="chat1" style="height: 50px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1">11:30 </p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                        <div class="chat2" style="height: 70px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                       <p id="timeright1">11:30</p>
+                      <img id="leftchat" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" > 
+                      <div class="chat1" style="height: 50px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1" >11:30</p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                        <div class="chat2" style="height: 120px;">
+           	                   <img style="width: 200px; height: 100px; padding: 10px;" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" >  </div>
+                       <p id="timeright1">11:30</p>
+                    <div class="chatin">
+                    	 <img id="link" src="link.svg" > 
+                    	<input type="text" id="textinput" name="">
+                    	<img id="link" src="happiness.svg" > 
+                    	<img id="link" src="send.svg" style="margin-left: 40px; width: 25px; margin-top: 20px;" > 
+                    </div>   
+               </div>
+           </span>
+       </div>
+        <div id="personchat1">  
+             	      <p style="margin: 30px; font-size: 15px;"><strong> James camaroon</strong> </p>
+    	                   <img id="fav" src="star.svg">
+    	                    <img id="phone" src="phone.svg">
+    	                    <div class="vdborder" style="">
+    		                      <img id="videocall" src="videocall.svg">
+    	                    </div><br>
+    	               <hr style="margin-top: 10px;">
+
+                        <div class="chatcard" >
+                                <img id="leftchat" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350" > 
+                                    <div class="chat1" style="height: 30px; ">
+           	                  <span id="messgesin"> klsnlsdNLM</span>
+                                 </div>
+                         <p id="timeleft1">11:30</p>
+                     <img id="rightchat" src="akhil.jpg" > 
+                        <div class="chat2" style="height: 30px;">
+           	                   <span id="messgesin"> <span id="messgesin"> klsnlsdNLM</span></div>
+                         <p id="timeright1">11:30</p>
+                       <img id="leftchat" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350" > 
+                          <div class="chat1" style="height: 60px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1">11:30 </p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                        
+                        	 <div class="chat2" style="height: 100px;">
+           	                   <span id="messgesin"> akhil</span> </div>
+                       <p id="timeright1">11:30</p>
+                      <img id="leftchat" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350" > 
+                      <div class="chat1" style="height: 30px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1" >11:30</p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                       <div class="chat2" style="height: 100px;">
+           	                   <img style="width: 200px; height: 100px; padding: 10px;" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" >  </div>
+                       <p id="timeright1">11:30</p>
+                    <div class="chatin">
+                    	 <img id="link" src="link.svg" > 
+                    	<input type="text" id="textinput" name="">
+                    	<img id="link" src="happiness.svg" > 
+                    	<img id="link" src="send.svg" style="margin-left: 40px; width: 25px; margin-top: 20px;" > 
+                    </div>   
+               </div>
+           </span>
+       </div>
+        <div id="personchat3">  
+             	      <p style="margin: 30px; font-size: 15px;"><strong> Frinkley sona</strong> </p>
+    	                   <img id="fav" src="star.svg">
+    	                    <img id="phone" src="phone.svg">
+    	                    <div class="vdborder" style="">
+    		                      <img id="videocall" src="videocall.svg">
+    	                    </div><br>
+    	               <hr style="margin-top: 10px;">
+
+                        <div class="chatcard" >
+                                <img id="leftchat" src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2018/03/h6-1521531233.jpg" > 
+                                    <div class="chat1" style="height: 60px; ">
+           	                  <span id="messgesin"> klsnlsdNLM</span>
+                                 </div>
+                         <p id="timeleft1">11:30</p>
+                     <img id="rightchat" src="akhil.jpg" > 
+                        <div class="chat2" style="height: 20px;">
+           	                   <span id="messgesin"> <span id="messgesin"> klsnlsdNLM</span></div>
+                         <p id="timeright1">11:30</p>
+                       <img id="leftchat" src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2018/03/h6-1521531233.jpg" > 
+                          <div class="chat1" style="height: 20px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1">11:30 </p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                        
+                        	 <div class="chat2" style="height: 70px;">
+           	                   <span id="messgesin"> akhil</span> </div>
+                       <p id="timeright1">11:30</p>
+                      <img id="leftchat" src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2018/03/h6-1521531233.jpg" > 
+                      <div class="chat1" style="height: 60px;">
+           	                   <span id="messgesin"> klsnlsdNLM</span> </div>
+                      <p id="timeleft1" >11:30</p>
+                       <img id="rightchat" src="akhil.jpg" > 
+                       <div class="chat2" style="height: 100px;">
+           	                   <img style="width: 200px; height: 100px; padding: 10px;" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg" >  </div>
+                       <p id="timeright1">11:30</p>
+                    <div class="chatin">
+                    	 <img id="link" src="link.svg" > 
+                    	<input type="text" id="textinput" name="">
+                    	<img id="link" src="happiness.svg" > 
+                    	<img id="link" src="send.svg" style="margin-left: 40px; width: 25px; margin-top: 20px;" > 
+                    </div>   
+               </div>
+           </span>
+       </div>
+                
+                
+
+    
+</div>
+    <div  class="col-sm-2" style="background-color: ; padding: 0px;">
+    	<div id="personprofile1">
+    	               <img id="link" src="notification.svg" > 
+    
+    	               <select class="select">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                        </select>
+                         	<hr style="margin-top: 40px;">
+                        <div id="last">
+                              <img id="gmail1" src="gmail.svg" > 
+                              <img id="gmail1" src="blackdots.svg"  style="margin-left: 140px;" >
+                              <img id="profileimage" src="http://hdqwalls.com/wallpapers/lion-roaring.jpg"  >
+                              <p style="margin-left: 30px; margin-top: 10px;"><strong>Akhil Nallamothu</strong></p>
+                              <hr>
+                               <p> <span style="opacity: 0.7 ;margin-left: 5px;">Nick name </span><span style="position: absolute; right: 20px;">Akhil N</span></p>
+                               <p><span  style="opacity: 0.7 ;margin-left: 5px;">Tel</span><span style="position: absolute; right: 20px;">654651684</span></p>
+                               <p><span style="opacity: 0.7 ;margin-left: 5px;">Date of birth</span> <span style="position: absolute; right: 20px;">15 6 1998</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Gender</span> <span style="position: absolute; right: 20px;">Male</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Language</span> <span style="position: absolute; right: 20px;">Telugu</span></p>
+                          </div>
+         </div>
+         <div id="personprofile3">
+    	               <img id="link" src="notification.svg" > 
+    
+    	               <select class="select">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                        </select>
+                         	<hr style="margin-top: 40px;">
+                        <div id="last">
+                              <img id="gmail1" src="gmail.svg" > 
+                              <img id="gmail1" src="blackdots.svg"  style="margin-left: 140px;" >
+                              <img id="profileimage" src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2018/03/h6-1521531233.jpg"  >
+                              <p style="margin-left: 30px; margin-top: 10px;"><strong>Frinkley sona</strong></p>
+                              <hr>
+                               <p> <span style="opacity: 0.7 ;margin-left: 5px;">Nick name </span><span style="position: absolute; right: 20px;">Frinkley s</span></p>
+                               <p><span  style="opacity: 0.7 ;margin-left: 5px;">Tel</span><span style="position: absolute; right: 20px;">23585425</span></p>
+                               <p><span style="opacity: 0.7 ;margin-left: 5px;">Date of birth</span> <span style="position: absolute; right: 20px;">10 5 1993</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Gender</span> <span style="position: absolute; right: 20px;">Female</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Language</span> <span style="position: absolute; right: 20px;">French</span></p>
+                          </div>
+         </div>
+         <div id="personprofile2">
+    	               <img id="link" src="notification.svg" > 
+    
+    	               <select class="select">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                        </select>
+                         	<hr style="margin-top: 40px;">
+                        <div id="last">
+                              <img id="gmail1" src="gmail.svg" > 
+                              <img id="gmail1" src="blackdots.svg"  style="margin-left: 140px;" >
+                              <img id="profileimage" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350"  >
+                              <p style="margin-left: 30px; margin-top: 10px;"><strong>James camaroon</strong></p>
+                              <hr>
+                               <p> <span style="opacity: 0.7 ;margin-left: 5px;">Nick name </span><span style="position: absolute; right: 20px;">Jmaes cam</span></p>
+                               <p><span  style="opacity: 0.7 ;margin-left: 5px;">Tel</span><span style="position: absolute; right: 20px;">65555668</span></p>
+                               <p><span style="opacity: 0.7 ;margin-left: 5px;">Date of birth</span> <span style="position: absolute; right: 20px;">15 9 1988</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Gender</span> <span style="position: absolute; right: 20px;">Male</span></p>
+                              <p><span style="opacity: 0.7 ;margin-left: 5px;">Language</span> <span style="position: absolute; right: 20px;">English</span></p>
+                          </div>
+                     </div>
+
+           </div>
+         </div>
+     </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
